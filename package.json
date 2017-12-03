@@ -11,7 +11,7 @@
     "ebook:pdf": "gitbook pdf . _book/ebook/testing-as-such.pdf",
     "ebook:epub": "gitbook epub . _book/ebook/testing-as-such.epub",
     "ebook:mobi": "gitbook mobi . _book/ebook/testing-as-such.mobi",
-    "heroku-postbuild": "npm run compile"
+    "heroku-postbuild": "npm run compile:html"
   },
   "repository": {
     "type": "git",
