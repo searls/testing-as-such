@@ -10,7 +10,8 @@
     "ebook": "mkdir -p dist/ebook && npm run ebook:pdf && npm run ebook:epub && npm run ebook:mobi",
     "ebook:pdf": "gitbook pdf . _book/ebook/testing-as-such.pdf",
     "ebook:epub": "gitbook epub . _book/ebook/testing-as-such.epub",
-    "ebook:mobi": "gitbook mobi . _book/ebook/testing-as-such.mobi"
+    "ebook:mobi": "gitbook mobi . _book/ebook/testing-as-such.mobi",
+    "heroku-postbuild": "npm run compile"
   },
   "repository": {
     "type": "git",
