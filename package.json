@@ -5,12 +5,12 @@
   "private": true,
   "scripts": {
     "start": "gitbook serve",
-    "compile": "rm -rf dist && npm run compile:html && npm run ebook",
-    "compile:html": "gitbook build . dist",
+    "compile": "rm -rf _ebook && npm run compile:html && npm run ebook",
+    "compile:html": "gitbook build",
     "ebook": "mkdir -p dist/ebook && npm run ebook:pdf && npm run ebook:epub && npm run ebook:mobi",
-    "ebook:pdf": "gitbook pdf . dist/ebook/testing-as-such.pdf",
-    "ebook:epub": "gitbook pdf . dist/ebook/testing-as-such.epub",
-    "ebook:mobi": "gitbook pdf . dist/ebook/testing-as-such.mobi"
+    "ebook:pdf": "gitbook pdf . _book/ebook/testing-as-such.pdf",
+    "ebook:epub": "gitbook epub . _book/ebook/testing-as-such.epub",
+    "ebook:mobi": "gitbook mobi . _book/ebook/testing-as-such.mobi"
   },
   "repository": {
     "type": "git",
