@@ -78,6 +78,14 @@ Note that nowhere in this example did we run a test runner from the command
 line, install an assertions library, or use any other tool but our runtime.
 These things are ubiquitous and helpful aids for authoring and maintaining
 tests, but don't ever let anyone tell you they're inherently necessary to test
-your software. This is a point worth emphasizing: you alone are in control of
-how you get feedback from your system that the code you're writing is
+your software.
 
+This is a point worth emphasizing: you are in near-total control of how you get
+feedback on the code you're writing. If writing one-off test scripts like the
+one above is too cumbersome, then you might adopt a tool to reduce the drudgery
+and encourage consistency. If running your tests is too slow to enable rapid
+feedback loops on whatever you're writing, you might find yourself needing to
+strip out some of the complexity and indirection that testing tools often
+introduce. Choosing the right tools for the situation at hand and then employing
+them to the right extent is just the first of many tradeoffs to be negotiated
+with respect to testing.
