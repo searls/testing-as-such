@@ -2,7 +2,7 @@
   "name": "testing-as-such",
   "version": "1.0.0",
   "description": "A little book on testing",
-  "main": "\"\"",
+  "private": true,
   "scripts": {
     "start": "gitbook serve",
     "compile": "gitbook build"
