@@ -80,5 +80,22 @@ we'll end with several of the testing workflows that can guide how you write
 production code, along with sufficient instruction on how to try your hand at
 them.
 
+## Tools
 
+This guide will emphasize the thinking behind good testing practice over
+teaching any particular testing library or framework. That said, concrete
+examples are important to bringing clarity to abstract points. All of the
+code examples in this book will be written in vanilla, uncompiled JavaScript on
+Node.js
+
+If you're looking to work through some of the examples on your own machine,
+you'll want to look at:
+
+* [Node.js](https://nodejs.org) version [8.x](https://nodejs.org/dist/latest-v8.x/)
+* [teenytest](https://github.com/testdouble/teenytest) - a test runner
+* [testdouble.js](https://github.com/testdouble/testdouble.js) - test double
+  (as in mocking, spying, stubbing, proxying, faking) library
+* [core-assert](https://github.com/sindresorhus/core-assert) - a standalone
+  module of the Node.js [built-in assert
+  module](https://nodejs.org/api/assert.html)
 

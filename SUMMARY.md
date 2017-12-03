@@ -1,7 +1,7 @@
 # Summary
 
 * [Part I: What is a test?](part-1-what-is-a-test/README.md)
-  * [The Problem with "Test"](part-1-what-is-a-test/definition.md)
+  * [The Problem with "Test"](part-1-what-is-a-test/the-problem-with-test.md)
   * [The Test Subject](part-1-what-is-a-test/subject.md)
   * [All About Assertions](part-1-what-is-a-test/assertions.md)
   * [Arrange-Act-Assert](part-1-what-is-a-test/arrange-act-assert.md)

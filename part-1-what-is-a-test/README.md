@@ -1,27 +1,28 @@
 # Part I: What is a Test?
 
-It might feel silly going to such great lengths to define something so seemingly
-obvious, but before we go any further we're going to take some time to define
-what tests are. There is a great deal of confusion surrounding testing
-generally, and few things can ward against or dispel confusion as
-well as a careful definition.
+It might feel silly defining something so seemingly obvious, but before we go
+any further we're going to take some time to choose a definition for what tests
+are and are not, for the purpose of this guide. There is a great deal of
+confusion surrounding testing generally, and few things can ward against or
+dispel confusion as effectively as a careful definition.
 
-So, without further ado, here's my definition of a test:
+So, without further ado, here's our definition of a test:
 
 > A test is code that invokes other code and places assertions on its behavior.
 
-This definition is pretty far-reaching, and intentionally so, as automated
-testing is, necessarily, nearly as broad and varied as programming itself.
+It's necessary that our definition be pretty far-reaching, as testing can be
+nearly as broad and varied as programming itself.
 
 It's worth noting that there are a few things that escape the definition above:
 
 * Any and all manual testing (e.g. [exploratory
-  testing](https://en.wikipedia.org/wiki/Exploratory_testing). While important,
-  it's sufficiently different to reside outside the scope of most of what we'll
-  mean when we refer to a "test"
+  testing](https://en.wikipedia.org/wiki/Exploratory_testing)). While good manual
+  testing is very important, it's different enough that most of what we say
+  about "testing" won't rightly apply to it
 * Software that verifies _itself_, particularly at runtime. While similar in
   purpose to a test, runtime assertions tend to have more in common with
-  exception handling and guard clauses than test design
+  exception handling and guard clauses than with test design as most people
+  understand it
 * Test files that invoke something but don't assert anything. These are just
   a convoluted way to execute a program to see that it doesn't blow up,
   potentially contributing to [code
@@ -30,17 +31,20 @@ It's worth noting that there are a few things that escape the definition above:
 
 In the same vein, a number of things could fall under this definition of test
 that may not typically come to mind. Using a REPL to ensure that a function
-behaves as we expect it to could be considered a test, even if the session is
-never persisted to disk. Likewise, a scratch file of assertions that one might
-keep to use to bolster their confidence as they work is still a test, even if
-it's never committed to version control.
+behaves as we expect could be considered a test, even if the session is never
+persisted to disk. Likewise, a scratch file of assertions that one might keep at
+their side in order to bolster their confidence as they work still qualifies as
+a test, even if it's never committed to version control.
+
+Note also that nothing about this definition constrains one's motivation in
+writing tests; while most tests are written to ensure a bit of code is working,
+it's no less valid for a test to exist primarily to give the author feedback on
+the usability of an object's design.
 
 ## Our first test
 
 Given this very broad and amorphous definition, let's try our hand at writing a
-simple test.
-
-Let's start with a simple module to place under test:
+simple test. Let's start with a simple module:
 
 ```js
 // add.js
@@ -60,7 +64,7 @@ if (require('./add')(1,2) !== 3) {
 
 The file `add.test.js` qualifies as a test, because it invokes the `add` module
 and asserts something about its behavior. It only covers a single example, so
-it's hardly a robust test of the function it's testing, but it will raise an
+it's hardly a robust test of the function, but it will raise an
 alarm if the `add()` function fails to meet its expectation.
 
 We can run the test with the `node` binary:
@@ -69,23 +73,23 @@ We can run the test with the `node` binary:
 $ node add.test.js
 ```
 
-Nothing is output, which isn't very reassuring, but since the command exits
-cleanly, it's probably safe to infer that should means "it's working". It may
-not be full-featured by modern standards, but there's no doubt that
-`add.test.js` is testing `add.js`.
+Nothing is output, which isn't especiaaly reassuring, but since the command
+exits cleanly, it's probably safe to infer that should mean it's working. It
+may not be full-featured by modern standards, but there's no doubt that
+`add.test.js` is indeed a test of `add.js`.
 
 Note that nowhere in this example did we run a test runner from the command
 line, install an assertions library, or use any other tool but our runtime.
 These things are ubiquitous and helpful aids for authoring and maintaining
-tests, but don't ever let anyone tell you they're inherently necessary to test
+tests, but never let anyone tell you they're inherently necessary to test
 your software.
 
 This is a point worth emphasizing: you are in near-total control of how you get
-feedback on the code you're writing. If writing one-off test scripts like the
-one above is too cumbersome, then you might adopt a tool to reduce the drudgery
-and encourage consistency. If running your tests is too slow to enable rapid
-feedback loops on whatever you're writing, you might find yourself needing to
-strip out some of the complexity and indirection that testing tools often
-introduce. Choosing the right tools for the situation at hand and then employing
-them to the right extent is just the first of many tradeoffs to be negotiated
-with respect to testing.
+feedback on the code you write. If writing one-off test scripts like the one
+above is too cumbersome, then you might adopt a tool to reduce the drudgery and
+encourage consistency. If running your tests is too slow to enable the
+productivity of rapid feedback loops, you might find yourself needing to strip
+out some of the complexity and indirection that testing tools often introduce.
+Choosing the right tools for the situation at hand and then employing them to
+the right extent is just the first of many tradeoffs to be negotiated with
+respect to testing.
