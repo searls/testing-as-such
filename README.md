@@ -75,7 +75,7 @@ to several of the qualities that characterize most automated tests. Next, we'll
 discuss various motivations that developers and teams typically have for writing
 tests. We'll then move on to unabashed advice on what separates good tests from
 bad. With that in place, we'll piece together broader strategies for planning
-suites of tests to support entire applications and complex sysstems. Finally,
+suites of tests to support entire applications and complex systems. Finally,
 we'll end with several of the testing workflows that can guide how you write
 production code, along with sufficient instruction on how to try your hand at
 them.

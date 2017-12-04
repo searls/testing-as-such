@@ -91,4 +91,4 @@ If running your tests is too slow to enable the productivity of rapid feedback
 loops, you might find yourself stripping out some of the complexity and
 indirection that testing tools often introduce.  Choosing the right tools for
 the situation at hand and then employing them to the right extent is just the
-first of many tradeoffs to be negotiated with respect to testing.
+first of many trade-offs to be negotiated with respect to testing.

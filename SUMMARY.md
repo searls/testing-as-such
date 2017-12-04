@@ -24,6 +24,7 @@
   * [Avoid Useless Pain](part-3-how-to-test-well/avoid-useless-pain.md)
   * [Experimental Controls](part-3-how-to-test-well/experimental-controls.md)
   * [Limit Redundant Coverage](part-3-how-to-test-well/limit-redundant-coverage.md)
+  * [Sending good messages](part-3-how-to-test-well/good-messages.md)
   * [Stay Symmetric](part-3-how-to-test-well/stay-symmetric.md)
   * [Make it Easy to Test](part-3-how-to-test-well/make-it-easy.md)
   * [Async Tests](part-3-how-to-test-well/async-tests.md)
