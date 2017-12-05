@@ -1,4 +1,4 @@
-# The problem with "Test"
+# The Problem with "Test"
 
 Now that we have a working definition of what a test is, let's talk about why
 it's perhaps an unfortunate choice of words for our industry to have landed on.
@@ -31,7 +31,7 @@ bring.
 Considered more broadly, testing is about generating custom-tailored _feedback_
 from software. The simplest and most common feedback we seek via tests is, of
 course, that the software is "working" (a separately loaded term for this
-usage). But, tests can provide other forms of useful feedback, too. Feedback
+usage). But tests can provide other forms of useful feedback, too. Feedback
 like:
 
 * Whether the design of the code we're writing makes it easy to set up, invoke,
@@ -39,8 +39,6 @@ like:
 * The runtime performance of our code, whether benchmarks of isolated critical
   sections or behavior of integrated systems when placed under heavy load
 * The degree to which our user interfaces are accessible to everyone
-* How time-sensitive code will behave at significant times of day, or days of
-  the year
 * Whether our code operates at a single level of abstraction, based on things
   like the conditions by which its logic branches or on the uniformity of the
   contracts between our code and its dependencies
@@ -71,21 +69,21 @@ productivity. (We'll discuss the ramifications of this in more detail in Part
 
 Separately, no tool can observe the usability and behavior of a function to as
 great a degree of specificity as a test. Isolated unit tests can provide as
-narrow and probing a seam to put a given function under test as we can imagine.
+narrow and probing a seam by which to test a given function as we can imagine.
 Sure, the behavior of any function could probably be observed in a black-box,
 integrated way (such as through a browser-based test of a web app), but that
-test would be much harder to trace back to the source. When an
-integrated test fails, the next step is usually a fact-finding mission to
-uncover the code that broke it; any error message we might read will typically be
-completely divorced from the function itself. Meanwhile,
-well-designed isolated tests can produce messages that are so localized that
-they can literally signal to the developer exactly what to do next, making the
-practice of programming feel more like a laid-back game of paint-by-number.
-(We'll discuss the [trade-offs on test
+test would be much harder to trace back to the source. When an integrated test
+fails, the next step is usually a fact-finding mission to uncover the code that
+broke it; any error message we might read will typically be completely divorced
+from the function itself. At the opposite end of the spectrum, sufficiently
+isolated tests can produce messages that are so localized that they can
+literally signal to the developer exactly what to do next, making the practice
+of programming feel more like a laid-back game of paint-by-number.  (We'll
+discuss the [trade-offs on test
 locality](../part-4-where-to-test/locality-vs-decoupling) in Part 4.)
 
 For all these reasons, I'd challenge you to loosen any preconceptions you have
-on what a test should be or why someone should or shouldn't write one. As it
+of what a test should be or why someone should or shouldn't write one. As it
 turns out, there are a near infinite number of good and bad motivations to write
 a test, and the right approach to testing will vary drastically from one
 situation to the next.
