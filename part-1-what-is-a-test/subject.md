@@ -67,7 +67,7 @@ will feel like some kind of moral concession, and can never be understood as
 having been the proper course of action. In all but the simplest cases, this
 path leads to slow, hard-to-maintain tests that nobody on the team can explain
 clearly. (Fake things that replace real things in tests are called "test
-doubles", and are [defined later in this section](test-doubles.html).)
+doubles", and are [defined later in this section](test-doubles.md).)
 
 Realism, it turns out, is not an unbounded virtue of good testing practice.
 
@@ -82,4 +82,4 @@ mindset, anyone on such a team should be able to easily explain and defend why
 it was appropriate to fake out, say, a third-party HTTP API throughout a given
 set of tests. (This is a weighty topic in its own right, and we'll cover it in
 more detail in Part 3's section on [Experimental
-Controls](../part-3-how-to-test-well/experimental-controls.html).)
+Controls](../part-3-how-to-test-well/experimental-controls.md).)

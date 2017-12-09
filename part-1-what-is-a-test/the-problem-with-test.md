@@ -2,9 +2,9 @@
 
 Now that we have a working definition of what a test is, let's talk about why
 it's perhaps an unfortunate choice of words for our industry to have landed on.
-As we'll discuss in [Part II](../part-2-why-write-tests), there's no shortage of
-reasons why people write automated tests, but not all of them fit neatly with
-other common uses of the English word "test".
+As we'll discuss in [Part II](../part-2-why-write-tests/README.md), there's no
+shortage of reasons why people write automated tests, but not all of them fit
+neatly with other common uses of the English word "test".
 
 Ask yourself: *what comes to mind when you think of the word "test"?*
 
@@ -65,7 +65,7 @@ run only the tests that target the bit of code they're working on? Typically,
 it's because they've internalized the lesson that the time it takes to receive
 feedback from their software is the chief limiting factor on their
 productivity. (We'll discuss the ramifications of this in more detail in Part
-3's section on [fast feedback](../part-3-how-to-test-well/fast-feedback).)
+3's section on [fast feedback](../part-3-how-to-test-well/fast-feedback.md).)
 
 Separately, no tool can observe the usability and behavior of a function to as
 great a degree of specificity as a test. Isolated unit tests can provide as
@@ -80,7 +80,7 @@ isolated tests can produce messages that are so localized that they can
 literally signal to the developer exactly what to do next, making the practice
 of programming feel more like a laid-back game of paint-by-number.  (We'll
 discuss the [trade-offs on test
-locality](../part-4-where-to-test/locality-vs-decoupling) in Part 4.)
+locality](../part-4-where-to-test/locality-vs-decoupling.md) in Part 4.)
 
 For all these reasons, I'd challenge you to loosen any preconceptions you have
 of what a test should be or why someone should or shouldn't write one. As it
